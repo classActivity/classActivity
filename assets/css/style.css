@@ -1,0 +1,17 @@
+.jumbotron{
+    background-color:black;
+    color:white;
+}
+
+.panel-heading{
+    background-color:black;
+    color: white;
+}
+
+#addEmployee{
+    margin:30px;
+}
+
+.btn{
+    margin-top:15px;
+}
