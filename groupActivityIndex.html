@@ -9,62 +9,74 @@
         <!-- Bootstrap links -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
             crossorigin="anonymous">
+            <!-- css link -->
+            <link rel="stylesheet" href="assets/css/style.css"> 
         <!-- Additional asset links here  -->
     </head>
 
     <body>
         <div class="container">
-            <div class="jumbotron" style="background-color:black">
-                <h1 class="text-center" style="color:white">
+            <!-- jumbotron div -->
+            <div class="row">
+                <div class="col-xs-12">
+            <div class="jumbotron">
+                <h1 class="text-center">
                     <strong>Employee Data Management
                         <strong>
                 </h1>
-                <h3 class="text-center" style="color:white">
+                <h3 class="text-center">
                     <strong> A comprehensive Directory of Employee Billable Hours</strong>
                 </h3>
             </div>
-
-            <body>
-                <div class="container">
-                    <div class="jumbotron">
-                        <h1 class="text-center">
-                            <strong>Employee Data Management
-                                <strong>
-                        </h1>
-                        <h3 class="text-center">
-                            <strong> A comprehensive Directory of Employee Billable Hours</strong>
-                        </h3>
-                    </div>
-                </div>
-                <div class="row" id="addEmployee">
-                    <div class="col-xs-12">
-                        <div class="panel panel-inverse">
+            </div>
+            </div>
+            <!-- table Div -->
+            <div class="row" id="currentEmps">
+                <div class="col-xs-12">
+                    <!-- table panel -->
+                    <div class="panel panel-primary" id= "tablePanel">
                             <div class="panel-heading">
-                                <h3 class="panel-title">Add Employee</h3>
+                              <h3 class="panel-title">Current Employees</h3>
                             </div>
-                            <div class="panel-body">
-                                <form>
-                                    <fieldset>
-                                        Employee Name:
-                                        <br>
-                                        <input type="text" name="employee-name" id="employee-name">
-                                        <br> Role:
-                                        <br>
-                                        <input type="text" name="role" id="role">
-                                        <br> Start Date (DD/MM/YY - ex:01/01/89):
-                                        <br>
-                                        <input type="text" name="start-date" id="start-date">
-                                        <br> Monthly Rate:
-                                        <br>
-                                        <input type="text" name="monthly-rate" id="monthly-rate">
-                                        <br>
-                                        <button type="submit" class="btn btn-info" id="submit-button">Submit</button>
-                                    </fieldset>
-                                </form>
+                            <div class="panel-body" id= "empTable">
+                              
+                                REPLACE THIS CONTENT WITH TABLE
+
                             </div>
+                          </div>
+                </div>
+
+            </div>          
+            
+            <div class="row" id="addEmployee">
+                <div class="col-xs-12">
+                    <div class="panel panel-primary" id ="input">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Add Employee</h3>
+                        </div>
+                        <div class="panel-body">
+                            <form>
+                                <fieldset>
+                                    Employee Name:
+                                    <br>
+                                    <input type="text" name="employee-name" id="employee-name">
+                                    <br> Role:
+                                    <br>
+                                    <input type="text" name="role" id="role">
+                                    <br> Start Date (DD/MM/YY - ex:01/01/89):
+                                    <br>
+                                    <input type="text" name="start-date" id="start-date">
+                                    <br> Monthly Rate:
+                                    <br>
+                                    <input type="text" name="monthly-rate" id="monthly-rate">
+                                    <br>
+                                    <button type="submit" class="btn btn-info" id="submit-button">Submit</button>
+                                </fieldset>
+                            </form>
                         </div>
                     </div>
                 </div>
-            </body>
+            </div>
+    </body>
 
     </html>
